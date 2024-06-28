@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #f0f0f0; */
+    /* background-image: linear-gradient(pink plum palevioletred); */
+    /* background-size: cover; */
+    background-color: rgb(160, 141, 160);
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: plum;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1);
+    /* display: flex; */
+    /* z-index: 23px; */
+    position: relative;
+}
+.heart{
+    position: absolute;
+}
+svg{
+    height: 700px;
+    /* margin-left: 23px; */
+    z-index: -1;
+}
+
+button {
+    padding: 30px 60px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* cursor: ; */
+}
+.z{
+    display: inline-block;
+    /* border: 1px solid whitesmoke; */
+
+}
+.z:hover{
+    animation: bubble 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes bubble {
+    0% {
+        transform: scale(1); 
+        /* background-color: azure; */
+        /* border: 0px solid whitesmoke; */
+    }
+    /* 50% {
+        transform: scale(1.5);
+    } */
+    100%{
+        transform: scale(1.3); 
+        /* background-color: bisque; */
+    }
+}
+
+#yesButton {
+    background-color: #4CAF50;
+    color: white;
+    font-size: larger;
+}
+
+#noButton {
+    background-color: #f44336;
+    color: white;
+    font-size: larger;
+}
+#yesButton :hover{
+    box-shadow: 0 0 30px #e8948e;
+    animation: bubble 1s ease-in-out;
+    animation-fill-mode: both;
+}
+#noButton :hover{
+    box-shadow: 0 0 30px #80ca82;
+    animation: bubble 1s ease-in-out;
+    animation-fill-mode: both;
+}
